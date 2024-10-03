@@ -7,7 +7,20 @@
    <title>About - MAFHA Technologies</title>
    <link rel="stylesheet" href="../Style.css">
    <script src="https://cdn.tailwindcss.com"></script>
-   <link rel="icon" href="../images/favorite1.ico" type="image/x-icon">
+   <link rel="icon" href="../images/MAFHA_Technologies_logo_onlynbg.png" type="image/x-icon">
+   <script src="../Script.js"></script>
+   <style>
+      /* Make sure body takes full height to push footer to the bottom */
+      body {
+         min-height: 100vh;
+         display: flex;
+         flex-direction: column;
+      }
+
+      main {
+         flex: 1;
+      }
+   </style>
 
 </head>
 
@@ -17,7 +30,7 @@
       <nav class="bg-white p-4 shadow-lg">
          <div class="container mx-auto flex justify-between items-center">
             <!-- Logo -->
-            <img src="./images/MAFHA Tech logo only.png" alt="LOGO" height="60px" width="60px">
+            <img src="../images/MAFHA Tech logo only.png" alt="LOGO" height="60px" width="60px">
             <a href="#" class="text-black text-1xl font-bold">MAFHA TECHNOLOGIES</a>
 
             <!-- Menu Button (for mobile view) -->
@@ -49,6 +62,39 @@
       </nav>
    </header>
    <!-- Header End -->
+
+   <main>
+      <div class="container mx-auto py-8">
+         <!-- Add your main content here -->
+         <h1 class="text-center text-3xl">Welcome to MyWebsite</h1>
+      </div>
+   </main>
+   <!-- Footer Start -->
+   <footer class="bg-[#1b2838] text-white py-6 w-full fixed bottom-0">
+      <div class="container mx-auto px-4">
+         <div class="flex flex-col md:flex-row justify-between items-center">
+
+            <!-- Left Section: Logo & Name -->
+            <div class="mb-4 md:mb-0">
+               <a href="#" class="text-lg font-bold hover:underline">MyWebsite</a>
+            </div>
+
+            <!-- Center Section: Navigation Links -->
+            <div class="flex space-x-6 mb-4 md:mb-0">
+               <a href="#" class="hover:underline">Home</a>
+               <a href="#" class="hover:underline">About</a>
+               <a href="#" class="hover:underline">Services</a>
+               <a href="#" class="hover:underline">Contact</a>
+            </div>
+
+            <!-- Right Section: Contact Info & Copyright -->
+            <div class="text-sm text-center md:text-right">
+               <p>Contact Us: info@mywebsite.com | +123 456 7890</p>
+               <p>&copy; 2024 MyWebsite. All Rights Reserved.</p>
+            </div>
+         </div>
+      </div>
+   </footer>
 
    <script>
       // Toggle Menu for Mobile View
