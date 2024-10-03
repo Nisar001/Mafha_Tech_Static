@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Contact - MAFHA Technologies</title>
+   <link rel="stylesheet" href="../Style.css">
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="icon" href="../images/favorite1.ico" type="image/x-icon">
+
+</head>
+
+<body>
+   <!-- Header Start -->
+   <header>
+      <nav class="bg-white p-4 shadow-lg">
+         <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <img src="./images/MAFHA Tech logo only.png" alt="LOGO" height="60px" width="60px">
+            <a href="#" class="text-black text-1xl font-bold">MAFHA TECHNOLOGIES</a>
+
+            <!-- Menu Button (for mobile view) -->
+            <button id="menu-btn" class="block md:hidden text-black focus:outline-none">
+               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+               </svg>
+            </button>
+
+            <!-- Links -->
+            <div id="menu" class="hidden md:flex space-x-6 text-gray-600 font-bold">
+               <a href="../HomePage.html" class="hover:text-black">Home</a>
+               <a href="./About.html" class="hover:text-black">About</a>
+               <a href="./Courses.html" class="hover:text-black">Courses</a>
+               <a href="./Services.html" class="hover:text-black">Services</a>
+               <a href="#" class="hover:text-black">Contact</a>
+            </div>
+         </div>
+
+         <!-- Mobile Menu -->
+         <div id="mobile-menu" class="hidden md:hidden bg-[#1b2838]">
+            <a href="../HomePage.html" class="block px-4 py-2 text-white hover:bg-[#a6a6a6]">Home</a>
+            <a href="./About.html" class="block px-4 py-2 text-white hover:bg-[#a6a6a6]">About</a>
+            <a href="./Courses.html" class="block px-4 py-2 text-white hover:bg-[#a6a6a6]">Courses</a>
+            <a href="./Services.html" class="block px-4 py-2 text-white hover:bg-[#a6a6a6]">Services</a>
+            <a href="#" class="block px-4 py-2 text-white hover:bg-[#a6a6a6]">Contact</a>
+         </div>
+      </nav>
+   </header>
+   <!-- Header End -->
+   <script>
+      // Toggle Menu for Mobile View
+      const menuBtn = document.getElementById('menu-btn');
+      const menu = document.getElementById('menu');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      menuBtn.addEventListener('click', () => {
+         mobileMenu.classList.toggle('hidden');
+      });
+   </script>
+</body>
+
+</html>
