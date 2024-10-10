@@ -7,7 +7,6 @@
    <title>Homepage - MAFHA Technologies</title>
    <link rel="stylesheet" href="./Style.css">
    <script src="https://cdn.tailwindcss.com"></script>
-   <script src="./Script.js"></script>
    <link rel="icon" href="./images/MAFHA_Technologies_logo_onlynbg.png" type="image/x-icon">
    <style>
       /* Make sure body takes full height to push footer to the bottom */
@@ -20,17 +19,37 @@
       main {
          flex: 1;
       }
+
+      /* For the scrolling animation in the gallery */
+      @keyframes scroll {
+         0% {
+            transform: translateX(100%);
+         }
+
+         100% {
+            transform: translateX(-100%);
+         }
+      }
+
+      .animate-scroll {
+         animation: scroll 30s linear infinite;
+      }
+
+      #techGallery {
+         /* To ensure it doesn't jump back to start */
+         white-space: nowrap;
+      }
    </style>
 </head>
 
 <body>
    <!-- Header Start -->
    <header>
-      <nav class="bg-white p-4 shadow-lg">
+      <nav class="bg-white p-4 shadow-lg fixed top-0 w-full z-10">
          <div class="container mx-auto flex justify-between items-center">
             <!-- Logo -->
             <img src="./images/MAFHA Tech logo only.png" alt="LOGO" height="60px" width="60px">
-            <a href="#" class="text-black text-1xl font-bold">MAFHA TECHNOLOGIES</a>
+            <a href="#" class="text-black text-2xl font-bold">MAFHA TECHNOLOGIES</a>
 
             <!-- Menu Button (for mobile view) -->
             <button id="menu-btn" class="block md:hidden text-black focus:outline-none">
@@ -62,19 +81,56 @@
    </header>
    <!-- Header End -->
 
-   <!-- Hero Section Start -->
-   <section>
-
-   </section>
-   <!-- Hero Section End -->
-   <main>
-      <div class="container mx-auto py-8">
-         <!-- Add your main content here -->
-         <h1 class="text-center text-3xl">Welcome to MyWebsite</h1>
+   <section class="bg-blue-600 text-white py-20 mt-16">
+      <div class="container mx-auto text-center">
+         <h1 class="text-5xl font-bold mb-4">Empowering the Next Generation of Learners</h1>
+         <p class="text-lg mb-8">Join our world-class online learning platform and explore new horizons with innovative
+            technologies.</p>
+         <a href="#" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold">Learn More</a>
       </div>
-   </main>
+   </section>
+
+   <!-- Gallery Section -->
+   <section class="py-16">
+      <div class="container mx-auto">
+         <h2 class="text-4xl font-bold text-center mb-12">Our Technologies</h2>
+         <div class="overflow-hidden">
+            <div class="flex animate-scroll space-x-8" id="techGallery">
+               <!-- Logos are dynamically added here by JS -->
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Testimonials Section -->
+   <section class="py-16 bg-gray-100">
+      <div class="container mx-auto">
+         <h2 class="text-4xl font-bold text-center mb-12">What Our Students Say</h2>
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+               <p class="text-gray-600 italic mb-4">
+                  "This platform changed my life! The content and technologies are so relevant."
+               </p>
+               <h4 class="font-bold text-gray-800">John Doe</h4>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+               <p class="text-gray-600 italic mb-4">
+                  "The hands-on approach in every course helped me understand technologies like never before."
+               </p>
+               <h4 class="font-bold text-gray-800">Jane Smith</h4>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+               <p class="text-gray-600 italic mb-4">
+                  "I love how the platform keeps up with the latest industry trends and technologies."
+               </p>
+               <h4 class="font-bold text-gray-800">Chris Johnson</h4>
+            </div>
+         </div>
+      </div>
+   </section>
+
    <!-- Footer Start -->
-   <footer class="bg-[#1b2838] text-white py-6 w-full fixed bottom-0">
+   <footer class="bg-[#1b2838] text-white py-6 w-full bottom-0">
       <div class="container mx-auto px-4">
          <div class="flex flex-col md:flex-row justify-between items-center">
 
@@ -111,6 +167,8 @@
          mobileMenu.classList.toggle('hidden');
       });
    </script>
+   <script src="./Script.js"></script>
+
 
 </body>
 

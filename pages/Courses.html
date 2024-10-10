@@ -8,7 +8,7 @@
    <link rel="stylesheet" href="../Style.css">
    <script src="https://cdn.tailwindcss.com"></script>
    <link rel="icon" href="../images/MAFHA_Technologies_logo_onlynbg.png" type="image/x-icon">
-   <script src="../Script.js"></script>
+
    <style>
       /* Make sure body takes full height to push footer to the bottom */
       body {
@@ -62,6 +62,21 @@
    </header>
    <!-- Header End -->
 
+   <!-- Courses Section Start -->
+   <div class="">
+      <!-- Courses Section -->
+      <section id="courses" class="py-20">
+         <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Our Popular Courses</h2>
+
+            <!-- Dynamic Course Cards -->
+            <div id="course-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+               <!-- Courses will be injected here by JS -->
+            </div>
+         </div>
+      </section>
+   </div>
+   <!-- Courses Section End -->
 
    <main>
       <div class="container mx-auto py-8">
@@ -105,6 +120,7 @@
          mobileMenu.classList.toggle('hidden');
       });
    </script>
+   <script src="../Script.js"></script>
 </body>
 
 </html>

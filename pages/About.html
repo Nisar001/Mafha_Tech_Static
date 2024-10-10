@@ -62,13 +62,42 @@
       </nav>
    </header>
    <!-- Header End -->
-
-   <main>
-      <div class="container mx-auto py-8">
-         <!-- Add your main content here -->
-         <h1 class="text-center text-3xl">Welcome to MyWebsite</h1>
-      </div>
-   </main>
+   <div class="pt-1">
+      <section class="py-20 bg-white">
+         <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-8">About Us</h2>
+            <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-8">
+               At Learning Institute, we are dedicated to providing high-quality education to students from all walks of
+               life. Our goal is to empower learners with the skills they need to succeed in their chosen fields.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+               <div class="bg-gray-100 p-6 rounded-lg">
+                  <h3 class="text-2xl font-semibold mb-4">Our Mission</h3>
+                  <p class="text-gray-600">
+                     Our mission is to make education accessible, affordable, and effective for everyone, no matter
+                     where
+                     they are in the world.
+                  </p>
+               </div>
+               <div class="bg-gray-100 p-6 rounded-lg">
+                  <h3 class="text-2xl font-semibold mb-4">Our Vision</h3>
+                  <p class="text-gray-600">
+                     We envision a world where education is not a privilege, but a right for everyone, creating global
+                     opportunities for all learners.
+                  </p>
+               </div>
+               <div class="bg-gray-100 p-6 rounded-lg">
+                  <h3 class="text-2xl font-semibold mb-4">Our Values</h3>
+                  <p class="text-gray-600">
+                     We believe in integrity, innovation, and inclusiveness. We work hard to create a learning
+                     experience
+                     that is second to none.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+   </div>
    <!-- Footer Start -->
    <footer class="bg-[#1b2838] text-white py-6 w-full fixed bottom-0">
       <div class="container mx-auto px-4">
@@ -106,6 +135,8 @@
          mobileMenu.classList.toggle('hidden');
       });
    </script>
+   <script src="../Script.js"></script>
+
 </body>
 
 </html>
