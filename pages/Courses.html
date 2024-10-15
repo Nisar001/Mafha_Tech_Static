@@ -4,10 +4,11 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Services - MAFHA Technologies</title>
+   <title>Courses - MAFHA Technologies</title>
    <link rel="stylesheet" href="../Style.css">
    <script src="https://cdn.tailwindcss.com"></script>
    <link rel="icon" href="../images/MAFHA_Technologies_logo_onlynbg.png" type="image/x-icon">
+
    <style>
       /* Make sure body takes full height to push footer to the bottom */
       body {
@@ -25,7 +26,7 @@
 <body>
    <!-- Header Start -->
    <header>
-      <nav class="bg-white p-4 shadow-lg">
+      <nav class="bg-white p-4 shadow-lg fixed top-0 w-full z-10">
          <div class="container mx-auto flex justify-between items-center">
             <!-- Logo -->
             <img src="../images/MAFHA Tech logo only.png" alt="LOGO" height="60px" width="60px">
@@ -43,8 +44,8 @@
             <div id="menu" class="hidden md:flex space-x-6 text-gray-600 font-bold">
                <a href="../HomePage.html" class="hover:text-black">Home</a>
                <a href="./About.html" class="hover:text-black">About</a>
-               <a href="./Courses.html" class="hover:text-black">Courses</a>
-               <a href="#" class="hover:text-black">Services</a>
+               <a href="#" class="hover:text-black">Courses</a>
+               <a href="./Services.html" class="hover:text-black">Services</a>
                <a href="./Contact.html" class="hover:text-black">Contact</a>
             </div>
          </div>
@@ -53,56 +54,38 @@
          <div id="mobile-menu" class="hidden md:hidden bg-[#1b2838]">
             <a href="../HomePage.html" class="block px-4 py-2 text-white hover:bg-[#a6a6a6]">Home</a>
             <a href="./About.html" class="block px-4 py-2 text-white hover:bg-[#a6a6a6]">About</a>
-            <a href="./Courses.html" class="block px-4 py-2 text-white hover:bg-[#a6a6a6]">Courses</a>
-            <a href="#" class="block px-4 py-2 text-white hover:bg-[#a6a6a6]">Services</a>
+            <a href="#" class="block px-4 py-2 text-white hover:bg-[#a6a6a6]">Courses</a>
+            <a href="./Services.html" class="block px-4 py-2 text-white hover:bg-[#a6a6a6]">Services</a>
             <a href="./Contact.html" class="block px-4 py-2 text-white hover:bg-[#a6a6a6]">Contact</a>
          </div>
       </nav>
    </header>
    <!-- Header End -->
 
-   <!-- Services Section -->
-   <div class="pt-1">
-      <section class="py-20 bg-white">
+   <!-- Courses Section Start -->
+   <div class="">
+      <!-- Courses Section -->
+      <section id="courses" class="py-20">
          <div class="container mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-8">Our Services</h2>
-            <p class="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-8">
-               We offer a wide range of services to help you achieve your learning goals. Whether you're a beginner or
-               an
-               experienced learner, we have something for you.
-            </p>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-               <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
-                  <h3 class="text-2xl font-semibold mb-4">Online Courses</h3>
-                  <p class="text-gray-600">Learn at your own pace with our wide range of online courses.</p>
-               </div>
-               <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
-                  <h3 class="text-2xl font-semibold mb-4">One-on-One Tutoring</h3>
-                  <p class="text-gray-600">Get personalized attention from our expert tutors.</p>
-               </div>
-               <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
-                  <h3 class="text-2xl font-semibold mb-4">Career Counseling</h3>
-                  <p class="text-gray-600">Receive guidance on how to take your career to the next level.</p>
-               </div>
-               <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
-                  <h3 class="text-2xl font-semibold mb-4">Workshops & Seminars</h3>
-                  <p class="text-gray-600">Participate in interactive workshops and seminars on the latest topics.</p>
-               </div>
-               <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
-                  <h3 class="text-2xl font-semibold mb-4">Certifications</h3>
-                  <p class="text-gray-600">Earn certifications to boost your resume and professional profile.</p>
-               </div>
-               <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
-                  <h3 class="text-2xl font-semibold mb-4">Corporate Training</h3>
-                  <p class="text-gray-600">Enhance the skills of your workforce with our corporate training programs.
-                  </p>
-               </div>
+            <h2 class="text-4xl font-bold text-center mb-12">Our Popular Courses</h2>
+
+            <!-- Dynamic Course Cards -->
+            <div id="course-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+               <!-- Courses will be injected here by JS -->
             </div>
          </div>
       </section>
    </div>
+   <!-- Courses Section End -->
+
+   <main>
+      <div class="container mx-auto py-8">
+         <!-- Add your main content here -->
+         <h1 class="text-center text-3xl">Welcome to MyWebsite</h1>
+      </div>
+   </main>
    <!-- Footer Start -->
-   <footer class="bg-[#1b2838] text-white py-6 w-full fixed bottom-0">
+   <footer class="bg-[#1b2838] text-white py-6 w-full bottom-0">
       <div class="container mx-auto px-4">
          <div class="flex flex-col md:flex-row justify-between items-center">
 
@@ -138,7 +121,6 @@
       });
    </script>
    <script src="../Script.js"></script>
-
 </body>
 
 </html>

@@ -4,11 +4,11 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Courses - MAFHA Technologies</title>
+   <title>About - MAFHA Technologies</title>
    <link rel="stylesheet" href="../Style.css">
    <script src="https://cdn.tailwindcss.com"></script>
    <link rel="icon" href="../images/MAFHA_Technologies_logo_onlynbg.png" type="image/x-icon">
-
+   <script src="../Script.js"></script>
    <style>
       /* Make sure body takes full height to push footer to the bottom */
       body {
@@ -21,12 +21,13 @@
          flex: 1;
       }
    </style>
+
 </head>
 
 <body>
    <!-- Header Start -->
    <header>
-      <nav class="bg-white p-4 shadow-lg">
+      <nav class="bg-white p-4 shadow-lg fixed top-0 w-full z-10">
          <div class="container mx-auto flex justify-between items-center">
             <!-- Logo -->
             <img src="../images/MAFHA Tech logo only.png" alt="LOGO" height="60px" width="60px">
@@ -43,8 +44,8 @@
             <!-- Links -->
             <div id="menu" class="hidden md:flex space-x-6 text-gray-600 font-bold">
                <a href="../HomePage.html" class="hover:text-black">Home</a>
-               <a href="./About.html" class="hover:text-black">About</a>
-               <a href="#" class="hover:text-black">Courses</a>
+               <a href="#" class="hover:text-black">About</a>
+               <a href="./Courses.html" class="hover:text-black">Courses</a>
                <a href="./Services.html" class="hover:text-black">Services</a>
                <a href="./Contact.html" class="hover:text-black">Contact</a>
             </div>
@@ -53,39 +54,52 @@
          <!-- Mobile Menu -->
          <div id="mobile-menu" class="hidden md:hidden bg-[#1b2838]">
             <a href="../HomePage.html" class="block px-4 py-2 text-white hover:bg-[#a6a6a6]">Home</a>
-            <a href="./About.html" class="block px-4 py-2 text-white hover:bg-[#a6a6a6]">About</a>
-            <a href="#" class="block px-4 py-2 text-white hover:bg-[#a6a6a6]">Courses</a>
+            <a href="#" class="block px-4 py-2 text-white hover:bg-[#a6a6a6]">About</a>
+            <a href="./Courses.html" class="block px-4 py-2 text-white hover:bg-[#a6a6a6]">Courses</a>
             <a href="./Services.html" class="block px-4 py-2 text-white hover:bg-[#a6a6a6]">Services</a>
             <a href="./Contact.html" class="block px-4 py-2 text-white hover:bg-[#a6a6a6]">Contact</a>
          </div>
       </nav>
    </header>
    <!-- Header End -->
-
-   <!-- Courses Section Start -->
-   <div class="">
-      <!-- Courses Section -->
-      <section id="courses" class="py-20">
+   <div class="pt-1">
+      <section class="py-20 bg-white">
          <div class="container mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-12">Our Popular Courses</h2>
-
-            <!-- Dynamic Course Cards -->
-            <div id="course-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-               <!-- Courses will be injected here by JS -->
+            <h2 class="text-4xl font-bold text-center mb-8">About Us</h2>
+            <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-8">
+               At Learning Institute, we are dedicated to providing high-quality education to students from all walks of
+               life. Our goal is to empower learners with the skills they need to succeed in their chosen fields.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+               <div class="bg-gray-100 p-6 rounded-lg">
+                  <h3 class="text-2xl font-semibold mb-4">Our Mission</h3>
+                  <p class="text-gray-600">
+                     Our mission is to make education accessible, affordable, and effective for everyone, no matter
+                     where
+                     they are in the world.
+                  </p>
+               </div>
+               <div class="bg-gray-100 p-6 rounded-lg">
+                  <h3 class="text-2xl font-semibold mb-4">Our Vision</h3>
+                  <p class="text-gray-600">
+                     We envision a world where education is not a privilege, but a right for everyone, creating global
+                     opportunities for all learners.
+                  </p>
+               </div>
+               <div class="bg-gray-100 p-6 rounded-lg">
+                  <h3 class="text-2xl font-semibold mb-4">Our Values</h3>
+                  <p class="text-gray-600">
+                     We believe in integrity, innovation, and inclusiveness. We work hard to create a learning
+                     experience
+                     that is second to none.
+                  </p>
+               </div>
             </div>
          </div>
       </section>
    </div>
-   <!-- Courses Section End -->
-
-   <main>
-      <div class="container mx-auto py-8">
-         <!-- Add your main content here -->
-         <h1 class="text-center text-3xl">Welcome to MyWebsite</h1>
-      </div>
-   </main>
    <!-- Footer Start -->
-   <footer class="bg-[#1b2838] text-white py-6 w-full fixed bottom-0">
+   <footer class="bg-[#1b2838] text-white py-6 w-full bottom-0">
       <div class="container mx-auto px-4">
          <div class="flex flex-col md:flex-row justify-between items-center">
 
@@ -110,6 +124,7 @@
          </div>
       </div>
    </footer>
+
    <script>
       // Toggle Menu for Mobile View
       const menuBtn = document.getElementById('menu-btn');
@@ -121,6 +136,7 @@
       });
    </script>
    <script src="../Script.js"></script>
+
 </body>
 
 </html>
