@@ -22,7 +22,7 @@ jobs:
 
       - name: Sync files to S3
         run: |
-          aws s3 sync ./ s3://mafha-tech --exclude ".git/*" --delete
+          aws s3 sync ./ s3://mafha-tec --exclude ".git/*" --delete
     #  - name: Invalidate CloudFront cache (if needed)
     #    run: |
     #      aws cloudfront create-invalidation --distribution-id YOUR_DISTRIBUTION_ID --paths "/*"
